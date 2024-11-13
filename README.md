@@ -8,6 +8,11 @@ Title:<Project Title>
 Objective:<The main objective of the project>  
 Description:<Brief description of what your project does>  
 Members:<Member1,Member2,...>  
+Keywords: <see keyword.file>
+Collaboration: <collaborator1>
+Start Date: <YYYY-MM-DD>
+End Date: <YYYY-MM-DD> (estimated)
+Status: <Starting, In Progress, Completed>
 ```
 
 ## 2. README.md
