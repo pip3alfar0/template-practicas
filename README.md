@@ -91,8 +91,12 @@ echo "Tests passed. Proceeding with commit."
 
 ```
 Note: You can use any scripting language, as long as you specify the interpreter at the beginning of the file (e.g., `#!/bin/bash`, `#!/usr/bin/env python3`, etc.).
+
 3. Make the file executable. Example
-`chmod +x .git/hooks/pre-commit`
+```
+cd ../..
+chmod +x .git/hooks/pre-commit
+```
 
 *Please try running the previous commands in this repository, and then check that when an error is introduced in any of the functions, you will not be able to commit.*
 
