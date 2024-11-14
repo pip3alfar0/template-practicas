@@ -34,6 +34,14 @@ Milestones can be used to track progress on groups of issues or pull requests in
 Additionally, this [supplementary material](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf) may be useful.
 
 ## 4. Commits & Branches
+### 4.1 Commits
+Commits are essential for saving changes in your project. They allow you to track modifications, revert to previous states, and collaborate efficiently. When making commits, it is important to:
+*  Write clear and concise commit messages
+* Make small, focused commits (Atomic)
+* Commit frequently
+
+It is important to maintain the atomicity of commits in order to better track the project's progress. [Here](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index) you can find examples of conventional commits that might be helpful.
+
 
 ## 5. Git Hooks for testing
 
