@@ -98,7 +98,7 @@ cd ../..
 chmod +x .git/hooks/pre-commit
 ```
 
-*Please try running the previous commands in this repository, and then check that when an error is introduced in any of the functions, you will not be able to commit.*
+*Please try running the previous commands in this repository, and then check that when an error is introduced in any of the functions (e.g. returning always true), you will not be able to commit.*
 
 ## 6. Supplementary Material
 
