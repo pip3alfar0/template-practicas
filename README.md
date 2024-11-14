@@ -52,6 +52,49 @@ Branches allow for parallel development, helping to isolate different features o
 
 this supplementary material ([branches](./slides-COM4602/Clase_5_Manejo_de_ramas.pdf),[commits](./slides-COM4602/Clase_6_Alteraci_n_de_commits.pdf), [issues, milestones & pull request](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf)) may be useful.
 ## 5. Git Hooks for testing
+Git hooks are scripts that run automatically. They can be useful for automating tasks such as running tests, linting, or formatting checks before committing or pushing changes. In the context of testing, hooks can help ensure that code is always validated before it enters the repository, helping to maintain the quality of the codebase.
+
+Git hooks are stored in the ./git/hooks/ directory of a repository, and each hook corresponds to a different Git event (e.g., pre-commit, pre-push, etc.). Aquí tenemos un ejemplos de los hooks usados para testing:
+* Pre-commit Hook: This hook runs before the commit is completed. If the test fails, the commit will not be executed, ensuring that only code that passes tests successfully is committed. Its use can range from unit tests to static code analysis, among others.
+* Post-commit Hook: This Hook runs after a commit has been made. If theres is an error in this stage, it will not stop the commit itself (since it occurs post-commit) but can trigger notifications or log the issue for later review. This hook can be useful for tasks such as updating documentation, sending notifications, or recording details about the commit.
+* Pre-push Hook: This hook runs before pushing to the remote repository. If there is an error, the push will be stopped, allowing you to catch and fix issues before updating the remote branch. This hook is useful for running integration tests or end-to-end teststo ensure that code pushed to the repository does not break functionality.
+* Post-push Hook: This hook runs after a push to a remote repository. It does not stop the push itself but can be useful for tasks like sending notifications, logging changes, or updating a dashboard. If errors occur, they won’t affect the push but can provide alerts for later review.
+
+
+Here are examples of the most commonly used Git hooks, like `pre-commit`, `post-commit`, and `pre-push`, which can help automate various tasks. Other hooks, such as `commit-msg` and `pre-merge`, might also be useful depending on your needs. Each hook serves a unique purpose, allowing for customization and quality control at different points in your workflow.
+
+For a comprehensive list of all available Git hooks, you can refer to the official Git documentation [here](https://git-scm.com/docs/githooks).
+
+
+### How to use
+This is an example of creating a pre-commit hook to verify that the functions `binary_search` and `seq_search` from `search_algorithm.py` pass all tests in `test_search_algorithm.py` before making the commit.
+1. Create the Hook file (if it doesn't exist already). Example:
+```
+cd .git/hooks
+touch pre-commit
+```
+2. Add testing commands to the hook file. Example:
+```
+#!/bin/bash
+echo "Running tests before committing..."
+
+# Run the tests
+python testing.py
+
+# Check for errors and halt commit if tests fail
+if [ $? -ne 0 ]; then
+    echo "Tests failed. Commit aborted."
+    exit 1
+fi
+
+echo "Tests passed. Proceeding with commit."
+
+```
+Note: You can use any scripting language, as long as you specify the interpreter at the beginning of the file (e.g., `#!/bin/bash`, `#!/usr/bin/env python3`, etc.).
+3. Make the file executable. Example
+`chmod +x .git/hooks/pre-commit`
+
+*Please try running the previous commands in this repository, and then check that when an error is introduced in any of the functions, you will not be able to commit.*
 
 ## 6. Supplementary Material
 
