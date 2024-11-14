@@ -50,7 +50,7 @@ Branches allow for parallel development, helping to isolate different features o
 * Use Pull Requests (PRs): Once the changes in a branch are complete, create a pull request to merge it into the main branch. This allows for code review and testing before integration. [Here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) is information about the creation and use of pull requests.
 * Keep branches up to date: Regularly merge the main branch into your feature branches to minimize merge conflicts.
 
-
+this supplementary material ([branches](./slides-COM4602/Clase_5_Manejo_de_ramas.pdf),[commits](./slides-COM4602/Clase_6_Alteraci_n_de_commits.pdf), [issues, milestones & pull request](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf)) may be useful.
 ## 5. Git Hooks for testing
 
 ## 6. Supplementary Material
