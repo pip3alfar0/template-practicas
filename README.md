@@ -19,6 +19,15 @@ Status: <Starting, In Progress, Completed>
 
 ## 3. Issues & Milestones
 
+Your project MUST utilize Issues and Milestones to effectively plan, track, and manage tasks, ensuring progress is monitored and objectives are met in a timely manner.
+
+#### 3.1 Issues
+Issues can be used to plan, discuss, or track the project's progress. They are also useful for following specific activities, such as bug fixes, new features, and new ideas. 
+[About issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues).
+
+[A brief tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart) provided by GitHub explains how to create issues. It is important at this point to label the issue (new categories can be created) and associate it with a milestone.
+
+
 ## 4. Commits & Branches
 
 ## 5. Git Hooks for testing
