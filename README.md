@@ -42,6 +42,14 @@ Commits are essential for saving changes in your project. They allow you to trac
 
 It is important to maintain the atomicity of commits in order to better track the project's progress. [Here](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index) you can find examples of conventional commits that might be helpful.
 
+### 4.2 Branches
+Branches allow for parallel development, helping to isolate different features or fixes. When working with branches, follow these best practices:
+
+* Use descriptive names for branches: Branch names should reflect the purpose or feature, e.g., feature/login-page, bugfix/header-error.
+* Create branches for features or fixes: Avoid committing directly to the main branch. Instead, create a new branch for each task/version.
+* Use Pull Requests (PRs): Once the changes in a branch are complete, create a pull request to merge it into the main branch. This allows for code review and testing before integration. [Here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) is information about the creation and use of pull requests.
+* Keep branches up to date: Regularly merge the main branch into your feature branches to minimize merge conflicts.
+
 
 ## 5. Git Hooks for testing
 
