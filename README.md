@@ -27,6 +27,11 @@ Issues can be used to plan, discuss, or track the project's progress. They are a
 
 [A brief tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart) provided by GitHub explains how to create issues. It is important at this point to label the issue (new categories can be created) and associate it with a milestone.
 
+### 3.2 Milestones
+Milestones can be used to track progress on groups of issues or pull requests in a repository. They allow you to group related tasks and visualize the status of a feature or a project's progress. Milestones can be used to set short- or long-term goals, and each milestone can be linked to one or more specific issues or pull requests. When creating a milestone, it is important to set an estimated completion date to help with better project planning.
+[A brief tutorial](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/creating-and-editing-milestones-for-issues-and-pull-requests) for creating milestones is available from GitHub.
+
+Additionally, this [supplementary material](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf) may be useful.
 
 ## 4. Commits & Branches
 
