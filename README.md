@@ -24,6 +24,7 @@ La estructura básica de su README.md se sugiere que sea la siguiente:
 4. Uso: Explique cómo ejecutar el proyecto. Se recomienda incluir ejemplos de cómo interactuar con el código y qué resultados/salidas se esperan.
 5. Licencia: Su proyecto **DEBE** utilizar la licencia del [MIT](https://opensource.org/licenses/MIT).
 
+Nota: **NO DEBE** subir información sensible al repositorio, como direcciones IP, contraseñas, nombres de bases de datos, o archivos grandes de datos, a menos que se le indique lo contrario.
 ## 3. Issues & Milestones
 
 El proyecto **DEBE** utilizar Issues y Milestones para planificar, realizar un seguimiento y gestionar las tareas de manera efectiva, asegurando que el progreso pueda monitorearse y los objetivos se cumplan a tiempo.
