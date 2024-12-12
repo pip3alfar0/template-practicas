@@ -85,7 +85,7 @@ $ touch pre-commit
 echo "Running tests before committing..."
 
 # Run the tests
-python testing.py
+python -B testing.py
 
 # Check for errors and halt commit if tests fail
 if [ $? -ne 0 ]; then
