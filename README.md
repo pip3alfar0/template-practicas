@@ -7,12 +7,13 @@ Debe crear un archivo llamado `.project_info` en la carpeta raíz del proyecto c
 Título: <Título del proyecto>  
 Objetivo: <El objetivo principal del proyecto>  
 Descripción: <Breve descripción de lo que hace tu proyecto>  
-Miembros: <Miembro1, Miembro2, ...>  
+Miembros actuales: <Miembro1, Miembro2, ...>  
+Miembros históricos: <Miembro histórico1, Miembro histórico2, ...>
 Palabras clave: <ver archivo keywords.txt>  
 Colaboración: <colaborador1, colaborador2, ...>  
 Fecha de inicio: <YYYY-MM-DD>  
 Fecha de finalización: <YYYY-MM-DD> (estimada)  
-Estado: <Iniciando, En progreso, Completado>
+Estado: <Iniciando, En progreso, Completado, Bloqueado, Abandonado>
 ```
 
 ## 2. Estructura básica del README.md
