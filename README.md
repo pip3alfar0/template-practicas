@@ -22,6 +22,7 @@ La estructura básica de su README.md se sugiere que sea la siguiente:
 2. Pre-instalación: Detalle los requisitos previos necesarios antes de instalar el proyecto. Por ejemplo: "Debe tener instalado Python3 en su sistema".
 3. Instalación: Instrucciones para preparar y ejecutar el código. Ejemplo: "Instalar las librerías del archivo `requirements.txt`".
 4. Uso: Explique cómo ejecutar el proyecto. Se recomienda incluir ejemplos de cómo interactuar con el código y qué resultados/salidas se esperan.
+5. Licencia: Su proyecto **DEBE** utilizar la licencia del [MIT](https://opensource.org/licenses/MIT).
 
 ## 3. Issues & Milestones
 
