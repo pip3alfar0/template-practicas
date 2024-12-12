@@ -72,8 +72,8 @@ Los **Git hooks** se almacenan en el directorio `./git/hooks/` de un repositorio
 Aquí se tienen ejemplos de los hooks de Git más comúnmente utilizados, como `pre-commit`, `post-commit` y `pre-push`, que pueden ayudar a automatizar varias tareas. Otros hooks, como `commit-msg` y `pre-merge`, también pueden ser útiles dependiendo de tus necesidades. Cada hook tiene un propósito único, lo que permite personalizar y controlar la calidad en diferentes puntos del flujo de trabajo. Para una lista completa de todos los hooks de Git disponibles, puedes consultar la [documentación](https://git-scm.com/docs/githooks) oficial de Git.
 
 
-### Ejemplo de Git Hook: pre-commit
-Aquí se tiene un ejemplo de cómo crear un hook pre-commit para verificar que las funciones `binary_search` y `seq_search` del archivo `search_algorithm.py` pasen todos los test de archivo `test_search_algorithm.py` antes de hacer el commit.
+### Ejemplo de Git Hook: pre-commit 
+Aquí se tiene un ejemplo de cómo crear un hook pre-commit para verificar que las funciones `binary_search` y `seq_search` del archivo `search_algorithm.py` pasen todos los test de archivo `test_search_algorithm.py` antes de hacer el commit. **Puede que algunos comandos solo los pueda ejecutar en Linux o MacOS**
 
 0. Reemplace la función `binary_search` en el archivo `search_algorithm.py` con esta versión incorrecta.
 ```python
