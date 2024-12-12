@@ -4,18 +4,27 @@ This template provides the basic information required for the GitHub project of 
 ## 1. Creation of `.project_info`
 Create a file called `.project_info` in the root folder of the project with the following structure:
 ```
-Title:<Project Title>  
-Objective:<The main objective of the project>  
-Description:<Brief description of what your project does>  
-Members:<Member1,Member2,...>  
-Keywords: <see keyword.file>
-Collaboration: <collaborator1>
-Start Date: <YYYY-MM-DD>
-End Date: <YYYY-MM-DD> (estimated)
-Status: <Starting, In Progress, Completed>
+Titulo:<Project Title>  
+Objetivo:<The main objective of the project>  
+Descripción:<Brief description of what your project does>  
+Miembros actuales:<Member1,Member2,...>  
+Miembros históricos:<Historic Member1, ...>
+Palabras clave: <see keyword.file>
+Colaboración: <collaborator1>
+Fecha de inicio: <YYYY-MM-DD>
+Fecha de finalización: <YYYY-MM-DD> (estimated)
+Estado: <Starting, In Progress, Completed, Blocked, Abandoned>
 ```
 
-## 2. README.md
+## 2. Basic structure of the README.md  
+The basic structure of your README.md is suggested to be as follows:  
+1. Brief description of the repository (you may use the same description as in .project_info if it matches).  
+2. Pre-installation: Detail the prerequisites required before installing the project. For example: "Python3 must be installed on your system."  
+3. Installation: Instructions for preparing and running the code. Example: "Install the libraries from the requirements.txt file."  
+4. Usage: Explain how to run the project. It is recommended to include examples of how to interact with the code and what results/outputs are expected.  
+5. License: Your project **MUST** use the [MIT](https://opensource.org/licenses/MIT) license.  
+
+Note: **DO NOT** upload sensitive information to the repository, such as IP addresses, passwords, database names, or large data files, unless otherwise instructed.
 
 ## 3. Issues & Milestones
 
@@ -61,13 +70,13 @@ Git hooks are stored in the ./git/hooks/ directory of a repository, and each hoo
 * Post-push Hook: This hook runs after a push to a remote repository. It does not stop the push itself but can be useful for tasks like sending notifications, logging changes, or updating a dashboard. If errors occur, they won’t affect the push but can provide alerts for later review.
 
 
-Here are examples of the most commonly used Git hooks, like `pre-commit`, `post-commit`, and `pre-push`, which can help automate various tasks. Other hooks, such as `commit-msg` and `pre-merge`, might also be useful depending on your needs. Each hook serves a unique purpose, allowing for customization and quality control at different points in your workflow.
+Here are examples of the most commonly used Git hooks, like `pre-commit`, `post-commit`, and `pre-push`, which can help automate various tasks. Other hooks, such as `commit-msg` and `pre-merge`, might also be useful depending on your needs. Each hook serves a unique purpose, allowing for customization and quality control at different points in your workflow. 
 
 For a comprehensive list of all available Git hooks, you can refer to the official Git documentation [here](https://git-scm.com/docs/githooks).
 
 
 ### Git Hook example: pre-commit
-This is an example of creating a pre-commit hook to verify that the functions `binary_search` and `seq_search` from `search_algorithm.py` pass all tests in `test_search_algorithm.py` before making the commit.
+This is an example of creating a pre-commit hook to verify that the functions `binary_search` and `seq_search` from `search_algorithm.py` pass all tests in `test_search_algorithm.py` before making the commit. **Some commands may only be executable on Linux or macOS.**
 
 0. Replace the `binary_search` function in the `search_algorithm.py` file with this incorrect version.
 ```python
