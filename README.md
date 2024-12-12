@@ -54,7 +54,7 @@ this supplementary material ([branches](./slides-COM4602/Clase_5_Manejo_de_ramas
 ## 5. Git Hooks for testing
 Git hooks are scripts that run automatically. They can be useful for automating tasks such as running tests, linting, or formatting checks before committing or pushing changes. In the context of testing, hooks can help ensure that code is always validated before it enters the repository, helping to maintain the quality of the codebase.
 
-Git hooks are stored in the ./git/hooks/ directory of a repository, and each hook corresponds to a different Git event (e.g., pre-commit, pre-push, etc.). Aquí tenemos un ejemplos de los hooks usados para testing:
+Git hooks are stored in the ./git/hooks/ directory of a repository, and each hook corresponds to a different Git event (e.g., pre-commit, pre-push, etc.). Here we have examples of GitHooks used for testing:
 * Pre-commit Hook: This hook runs before the commit is completed. If the test fails, the commit will not be executed, ensuring that only code that passes tests successfully is committed. Its use can range from unit tests to static code analysis, among others.
 * Post-commit Hook: This Hook runs after a commit has been made. If theres is an error in this stage, it will not stop the commit itself (since it occurs post-commit) but can trigger notifications or log the issue for later review. This hook can be useful for tasks such as updating documentation, sending notifications, or recording details about the commit.
 * Pre-push Hook: This hook runs before pushing to the remote repository. If there is an error, the push will be stopped, allowing you to catch and fix issues before updating the remote branch. This hook is useful for running integration tests or end-to-end teststo ensure that code pushed to the repository does not break functionality.
@@ -68,10 +68,16 @@ For a comprehensive list of all available Git hooks, you can refer to the offici
 
 ### How to use
 This is an example of creating a pre-commit hook to verify that the functions `binary_search` and `seq_search` from `search_algorithm.py` pass all tests in `test_search_algorithm.py` before making the commit.
-1. Create the Hook file (if it doesn't exist already). Example:
+
+0. Replace the `binary_search` function in the `search_algorithm.py` file with this incorrect version.
+```python
+def binary_search(arr, target):
+    return True # devolvera siempre True
 ```
-cd .git/hooks
-touch pre-commit
+1. In the root folder, create the Hook file (if it doesn't exist already). Example:
+```bash
+$ cd .git/hooks
+$ touch pre-commit
 ```
 2. Add testing commands to the hook file. Example:
 ```
@@ -93,12 +99,15 @@ echo "Tests passed. Proceeding with commit."
 Note: You can use any scripting language, as long as you specify the interpreter at the beginning of the file (e.g., `#!/bin/bash`, `#!/usr/bin/env python3`, etc.).
 
 3. Make the file executable. Example
+```bash
+.git/hooks$ cd ../..
+$ chmod +x .git/hooks/pre-commit
 ```
-cd ../..
-chmod +x .git/hooks/pre-commit
+4. Please try to commit the changes made to `binary_search`, and you should not be able to complete the commit.
+```bash
+$ git add search_algorithm.py
+$ git commit -m "bad commit"
 ```
-
-*Please try running the previous commands in this repository, and then check that when an error is introduced in any of the functions (e.g. returning always true), you will not be able to commit.*
 
 ## 6. Supplementary Material
 
