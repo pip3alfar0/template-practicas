@@ -1,85 +1,90 @@
 # template-practicas
-This template provides the basic information required for the GitHub project of the internship. Additionally, it includes tutorials and additional information that will facilitate better use of the GitHub platform and some of its services.
+Este template proporciona la información básica requerida para el proyecto de GitHub de la práctica. Además, incluye tutoriales e información adicional que facilitarán un mejor uso de la plataforma de GitHub y algunos de sus servicios.
 
-## 1. Creation of `.project_info`
-Create a file called `.project_info` in the root folder of the project with the following structure:
+## 1. Creación del archivo `.project_info`
+Debe crear un archivo llamado `.project_info` en la carpeta raíz del proyecto con la siguiente estructura:
 ```
-Title:<Project Title>  
-Objective:<The main objective of the project>  
-Description:<Brief description of what your project does>  
-Members:<Member1,Member2,...>  
-Keywords: <see keyword.file>
-Collaboration: <collaborator1>
-Start Date: <YYYY-MM-DD>
-End Date: <YYYY-MM-DD> (estimated)
-Status: <Starting, In Progress, Completed>
+Título: <Título del proyecto>  
+Objetivo: <El objetivo principal del proyecto>  
+Descripción: <Breve descripción de lo que hace tu proyecto>  
+Miembros: <Miembro1, Miembro2, ...>  
+Palabras clave: <ver archivo keywords.txt>  
+Colaboración: <colaborador1, colaborador2, ...>  
+Fecha de inicio: <YYYY-MM-DD>  
+Fecha de finalización: <YYYY-MM-DD> (estimada)  
+Estado: <Iniciando, En progreso, Completado>
 ```
 
-## 2. README.md
+## 2. Estructura básica del README.md
 
 ## 3. Issues & Milestones
 
-Your project MUST utilize Issues and Milestones to effectively plan, track, and manage tasks, ensuring progress is monitored and objectives are met in a timely manner.
+El proyecto **DEBE** utilizar Issues y Milestones para planificar, realizar un seguimiento y gestionar las tareas de manera efectiva, asegurando que el progreso pueda monitorearse y los objetivos se cumplan a tiempo.
 
 #### 3.1 Issues
-Issues can be used to plan, discuss, or track the project's progress. They are also useful for following specific activities, such as bug fixes, new features, and new ideas. 
-[About issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues).
+Los Issues se pueden usar para planificar, discutir o hacer un seguimiento del progreso del proyecto. También son útiles para seguir actividades específicas, como la corrección de errores, nuevas funcionalidades y nuevas ideas.
+[En este link](https://docs.github.com/es/issues/tracking-your-work-with-issues/about-issues) puede encontrar mas información sobre issues. 
 
-[A brief tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart) provided by GitHub explains how to create issues. It is important at this point to label the issue (new categories can be created) and associate it with a milestone.
+[Un breve tutorial](https://docs.github.com/es/issues/tracking-your-work-with-issues/configuring-issues/quickstart) proporcionado por GitHub explica cómo crear issues. Es importante, en este punto, etiquetar el issue (se pueden crear nuevas categorías) y asociarlo con un milestone. 
 
 ### 3.2 Milestones
-Milestones can be used to track progress on groups of issues or pull requests in a repository. They allow you to group related tasks and visualize the status of a feature or a project's progress. Milestones can be used to set short- or long-term goals, and each milestone can be linked to one or more specific issues or pull requests. When creating a milestone, it is important to set an estimated completion date to help with better project planning.
-[A brief tutorial](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/creating-and-editing-milestones-for-issues-and-pull-requests) for creating milestones is available from GitHub.
+Los Milestones se pueden usar para realizar un seguimiento del progreso de grupos de issues o pull requests en un repositorio. Permiten agrupar tareas relacionadas y visualizar el estado y progreso de una funcionalidad, tarea o del proyecto. Los milestones se pueden usar para establecer metas a corto o largo plazo, y cada milestone puede estar vinculado a uno o más issues o pull requests específicos. Al crear un milestone, es importante establecer una fecha estimada de finalización para ayudar en una mejor planificación del proyecto.
+[Un breve tutorial](https://docs.github.com/es/issues/using-labels-and-milestones-to-track-work/creating-and-editing-milestones-for-issues-and-pull-requests) para la creación de milestones está disponible en GitHub.
 
-Additionally, this [supplementary material](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf) may be useful.
+Adicionalmente, este [material suplementario](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf) puede ser de utilidad.
 
 ## 4. Commits & Branches
 ### 4.1 Commits
-Commits are essential for saving changes in your project. They allow you to track modifications, revert to previous states, and collaborate efficiently. When making commits, it is important to:
-*  Write clear and concise commit messages
-* Make small, focused commits (Atomic)
-* Commit frequently
+Los commits son esenciales para guardar los cambios en un proyecto. Permiten hacer un seguimiento de las modificaciones, revertir a estados anteriores y colaborar de manera eficiente. Al realizar commits, es importante:
 
-It is important to maintain the atomicity of commits in order to better track the project's progress. [Here](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index) you can find examples of conventional commits that might be helpful.
+* Escribir mensajes de commit claros y concisos
+* Hacer commits pequeños y enfocados (Atómicos)
+* Hacer commits con frecuencia
+
+Es importante mantener la atomicidad de los commits para poder realizar un mejor seguimiento del progreso del proyecto. [Aquí](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index) puedes encontrar ejemplos de commits convencionales que podrían ser útiles.
 
 ### 4.2 Branches
-Branches allow for parallel development, helping to isolate different features or fixes. When working with branches, follow these best practices:
 
-* Use descriptive names for branches: Branch names should reflect the purpose or feature, e.g., feature/login-page, bugfix/header-error.
-* Create branches for features or fixes: Avoid committing directly to the main branch. Instead, create a new branch for each task/version.
-* Use Pull Requests (PRs): Once the changes in a branch are complete, create a pull request to merge it into the main branch. This allows for code review and testing before integration. [Here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) is information about the creation and use of pull requests.
-* Keep branches up to date: Regularly merge the main branch into your feature branches to minimize merge conflicts.
+Las branches permiten un desarrollo paralelo, ayudando a aislar diferentes características o correcciones. Al trabajar con branch, siga estas mejores prácticas:
 
-this supplementary material ([branches](./slides-COM4602/Clase_5_Manejo_de_ramas.pdf),[commits](./slides-COM4602/Clase_6_Alteraci_n_de_commits.pdf), [issues, milestones & pull request](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf)) may be useful.
-## 5. Git Hooks for testing
-Git hooks are scripts that run automatically. They can be useful for automating tasks such as running tests, linting, or formatting checks before committing or pushing changes. In the context of testing, hooks can help ensure that code is always validated before it enters the repository, helping to maintain the quality of the codebase.
+* **Use nombres descriptivos para las branch**: Los nombres de las branch deben reflejar el propósito o la característica, por ejemplo, `feature/login-page`, `bugfix/header-error`.
+* **Cree una branch para funcionalidad o bugs**: Evita hacer commits directamente en la branch principal. En su lugar, crea una nueva branch para cada tarea/versión/bug.
+* **Usa Pull Requests (PRs)**: Una vez que los cambios en una branch estén completos, cree un pull request para fusionarlos con la branch principal. Esto permite la revisión del código y pruebas antes de la integración. [Aquí](https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) encontrará información sobre la creación y uso de pull requests.
+* **Mantener las branches actualizadas**: Realice regularmente el merge de la branch principal en tus branches de funcionaliades/bugs para minimizar los conflictos de merge.
 
-Git hooks are stored in the ./git/hooks/ directory of a repository, and each hook corresponds to a different Git event (e.g., pre-commit, pre-push, etc.). Here we have examples of GitHooks used for testing:
-* Pre-commit Hook: This hook runs before the commit is completed. If the test fails, the commit will not be executed, ensuring that only code that passes tests successfully is committed. Its use can range from unit tests to static code analysis, among others.
-* Post-commit Hook: This Hook runs after a commit has been made. If theres is an error in this stage, it will not stop the commit itself (since it occurs post-commit) but can trigger notifications or log the issue for later review. This hook can be useful for tasks such as updating documentation, sending notifications, or recording details about the commit.
-* Pre-push Hook: This hook runs before pushing to the remote repository. If there is an error, the push will be stopped, allowing you to catch and fix issues before updating the remote branch. This hook is useful for running integration tests or end-to-end teststo ensure that code pushed to the repository does not break functionality.
-* Post-push Hook: This hook runs after a push to a remote repository. It does not stop the push itself but can be useful for tasks like sending notifications, logging changes, or updating a dashboard. If errors occur, they won’t affect the push but can provide alerts for later review.
+Este material suplementario sobre ([branches](./slides-COM4602/Clase_5_Manejo_de_ramas.pdf),[commits](./slides-COM4602/Clase_6_Alteraci_n_de_commits.pdf), [issues, milestones & pull request](./slides-COM4602/Clase_8_seguimiento_de_tareas.pdf)) puede ser de utilidad.
+
+## 5. Git Hooks para testing
+Los Git hooks son scripts que se ejecutan automáticamente. Pueden ser útiles para automatizar tareas como ejecutar pruebas, realizar chequeos de linting o de formato antes de hacer commit o push de los cambios. En el contexto del testing, los hooks pueden ayudar a asegurar que el código siempre sea validado antes de ingresar al repositorio, ayudando a mantener la calidad del código.
+
+Los **Git hooks** se almacenan en el directorio `./git/hooks/` de un repositorio, y cada hook corresponde a un evento diferente de Git (por ejemplo, pre-commit, pre-push, etc.). A continuación, se presentan ejemplos de **Git Hooks** utilizados para testing:
+
+* **Pre-commit Hook**: Este hook se ejecuta antes de que se complete el commit. Si las pruebas fallan, el commit no se ejecutará, asegurando que solo se haga commit de código que pase los tests correctamente. Su uso puede incluir test unitarios, análisis estático de código, entre otros.
+
+* **Post-commit Hook**: Este hook se ejecuta después de que se ha realizado un commit. Si ocurre un error en esta etapa, no detendrá el commit (ya que se ejecuta después del commit), pero puede activar notificaciones o registrar el problema para su revisión posterior. Este hook puede ser útil para tareas como actualizar la documentación, enviar notificaciones o registrar detalles sobre el commit.
+
+* **Pre-push Hook**: Este hook se ejecuta antes de hacer push al repositorio remoto. Si hay un error, el push se detendrá, permitiendo detectar y corregir problemas antes de actualizar la branch remota. Este hook es útil para ejecutar test de integración o test end-to-end, asegurando que el código que se sube al repositorio no rompa la funcionalidad.
+
+* **Post-push Hook**: Este hook se ejecuta después de hacer push a un repositorio remoto. No detiene el push en sí, pero puede ser útil para tareas como enviar notificaciones, registrar cambios o actualizar un dashboard. Si ocurren errores, no afectarán al push, pero pueden generar alertas para su revisión posterior.
 
 
-Here are examples of the most commonly used Git hooks, like `pre-commit`, `post-commit`, and `pre-push`, which can help automate various tasks. Other hooks, such as `commit-msg` and `pre-merge`, might also be useful depending on your needs. Each hook serves a unique purpose, allowing for customization and quality control at different points in your workflow.
-
-For a comprehensive list of all available Git hooks, you can refer to the official Git documentation [here](https://git-scm.com/docs/githooks).
+Aquí se tienen ejemplos de los hooks de Git más comúnmente utilizados, como `pre-commit`, `post-commit` y `pre-push`, que pueden ayudar a automatizar varias tareas. Otros hooks, como `commit-msg` y `pre-merge`, también pueden ser útiles dependiendo de tus necesidades. Cada hook tiene un propósito único, lo que permite personalizar y controlar la calidad en diferentes puntos del flujo de trabajo. Para una lista completa de todos los hooks de Git disponibles, puedes consultar la [documentación](https://git-scm.com/docs/githooks) oficial de Git.
 
 
-### How to use
-This is an example of creating a pre-commit hook to verify that the functions `binary_search` and `seq_search` from `search_algorithm.py` pass all tests in `test_search_algorithm.py` before making the commit.
+### Ejemplo de Git Hook: pre-commit
+Aquí se tiene un ejemplo de cómo crear un hook pre-commit para verificar que las funciones `binary_search` y `seq_search` del archivo `search_algorithm.py` pasen todos los test de archivo `test_search_algorithm.py` antes de hacer el commit.
 
-0. Replace the `binary_search` function in the `search_algorithm.py` file with this incorrect version.
+0. Reemplace la función `binary_search` en el archivo `search_algorithm.py` con esta versión incorrecta.
 ```python
 def binary_search(arr, target):
     return True # devolvera siempre True
 ```
-1. In the root folder, create the Hook file (if it doesn't exist already). Example:
+1. En la carpeta raíz, cree el archivo Hook (si no existe ya). Ejemplo:
 ```bash
 $ cd .git/hooks
 $ touch pre-commit
 ```
-2. Add testing commands to the hook file. Example:
+2. Agregue los comandos de prueba al archivo Hook. Ejemplo:
 ```
 #!/bin/bash
 echo "Running tests before committing..."
@@ -96,21 +101,20 @@ fi
 echo "Tests passed. Proceeding with commit."
 
 ```
-Note: You can use any scripting language, as long as you specify the interpreter at the beginning of the file (e.g., `#!/bin/bash`, `#!/usr/bin/env python3`, etc.).
+Nota: Se puede usar cualquier lenguaje, siempre que especifiques el intérprete al comienzo del archivo (por ejemplo, `#!/bin/bash`, `#!/usr/bin/env python3`, etc.).
 
-3. Make the file executable. Example
+3. Haga que el archivo sea ejecutable. Ejemplo:
 ```bash
 .git/hooks$ cd ../..
 $ chmod +x .git/hooks/pre-commit
 ```
-4. Please try to commit the changes made to `binary_search`, and you should not be able to complete the commit.
+4. Por favor, intente hacer el commit de los cambios realizados en `binary_search`, y no debería poder completar el commit.
 ```bash
 $ git add search_algorithm.py
 $ git commit -m "bad commit"
 ```
 
 ## 6. Supplementary Material
-
 
 ## Acknowledgments:
 @dmadariaga
