@@ -122,8 +122,8 @@ $ git add search_algorithm.py
 $ git commit -m "bad commit"
 ```
 
-## 6. Supplementary Material
-
+## 6. Material Complementario
+El material presente en la carpeta [slides-COM4602](./slides-COM4602/) entrega conocimientos básicos y avanzados del uso de la herramienta git. Este material corresponde a las slides del curso "Introducción a los Repositorios de Código Distribuido" dictado por el profesor Diego Madariaga en la universidad de O'higgins el año 2021. Agradecemos enormemente a nuestro antiguo compañero de laboratorio Diego por facilitarnos el material.
 ## Acknowledgments:
 @dmadariaga
 

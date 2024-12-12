@@ -119,7 +119,7 @@ $ git commit -m "bad commit"
 ```
 
 ## 6. Supplementary Material
-
+The material present in the folder [slides-COM4602](./slides-COM4602/) provides basic and advanced knowledge on the use of the Git tool. This material corresponds to the slides from the course "Introducción a los Repositorios de Código Distribuido" taught by Professor Diego Madariaga at the University of O'Higgins in 2021. We greatly appreciate our former lab member Diego for providing us with the material.
 
 ## Acknowledgments:
 @dmadariaga
