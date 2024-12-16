@@ -12,7 +12,7 @@ def binary_search(arr, target):
         else:
             high = mid - 1
     
-    return False
+    return True
 
 def seq_search(array, x):
 	for element in array:
